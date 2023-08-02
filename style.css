@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&display=swap');
+
+* {
+    margin: 0 auto;
+}
+:root {
+    --font: 'Comic Neue', cursive;
+    --blue: rgba(131, 217, 246, 0.8);
+    --yellow: rgba(220, 255, 115, 0.8);
+    --red: rgba(255, 101, 140, 0.7);
+}
+a {
+    color: #333;
+}
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    height: 100vh;    
+    font-family: var(--font);
+    color: #333;
+}
+main {
+    background-color: #fff;
+    width: 90%;
+    height: 70%;
+    z-index: 99;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 500px;
+    box-shadow: 0 0 10px 0px #44444422;
+    /* border-radius: 10px; */
+    position: relative;
+    /* border: 1.5px solid #333; */
+}
+fieldset {
+    border-radius: 5px;
+    border: 1.5px solid #333;
+}
+
+button {
+    font-family: var(--font);
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    border: 1.5px solid #333;
+}
+img {
+    width: 50%;
+    
+}
+
+input {
+    width: 97%;
+    text-align: center;
+    border-radius: 4px;
+}
+video {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.content {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    margin: 5% 8%;
+    width: 84%;
+    height: 92.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-1 fieldset  p {
+    padding-bottom:0.4rem;
+
+}
+#page-1 fieldset  fieldset p {
+    font-size: 1.2rem;
+    padding: 1rem 0 1.2rem 0;
+}
+
+.open {
+    position: absolute;
+    bottom: -3rem;
+    right: 0rem;
+}
+#page-1 .open button:hover {
+    background-color: var(--blue);
+}
+
+#page-2 input {
+    margin-top: 0.8rem;
+    padding: 0.6rem 0;
+    font-size: 1.1rem;
+    border: 1.5px solid #333;
+}
+#page-2 .login {
+    margin-top: 0.4rem;
+}
+#page-2 .login button {
+    width: 98%;
+    padding: 0.6rem 0;
+    font-size: 1.1rem;
+}
+#page-2 .login button:hover {
+    background-color: rgba(255, 101, 140, 0.4);;
+}
+
+
+
+
+
+/* STYLING */
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.txt-small {
+    font-size: 0.8rem;
+}
+
+
+
+/* COLORING */
+.bg-blue {
+    background-color: var(--blue);
+}
+.bg-red {
+    background-color: var(--red);
+    /* color: white; */
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+/* BACKGROUND */
+.polkadot-pattern::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #33333322 1px, transparent 3px);
+    background-size: 30px 30px;
+}
+
+
+/* HIDE SECTION */
+#page-2, #page-3, #page-4, #page-5 {
+    display: none;
+}
+
+
